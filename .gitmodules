@@ -1,0 +1,15 @@
+[submodule "src/livox_ros_driver"]
+	path = src/livox_ros_driver
+	url = https://github.com/Livox-SDK/livox_ros_driver.git
+[submodule "src/fast_lio"]
+	path = src/fast_lio
+	url = https://github.com/hku-mars/FAST_LIO.git
+[submodule "src/BEV-LIO-LC"]
+	path = src/BEV-LIO-LC
+	url = https://github.com/HxCa1/BEV-LIO-LC.git
+[submodule "src/bev-lio-lc-to-hdmapping/src/3rdparty/LASzip"]
+	path = src/bev-lio-lc-to-hdmapping/src/3rdparty/LASzip
+	url = https://github.com/LASzip/LASzip.git
+[submodule "src/FAST_LIO"]
+	path = src/FAST_LIO
+	url = https://github.com/hku-mars/FAST_LIO.git
