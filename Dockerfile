@@ -238,7 +238,6 @@ RUN grep -n -A8 -B3 "mode_t" \
     /workspace/libtorch/include/torch/csrc/api/include/torch/nn/options/vision.h
 
 RUN source /opt/ros/noetic/setup.bash && \
-    source /workspace/ws_livox/devel/setup.bash && \
     cd /workspace/benchmark && \
     rosdep install \
         --from-paths src \
@@ -259,7 +258,6 @@ RUN sed -i \
 RUN sed -i 's|loopClosureEnableFlag: false|loopClosureEnableFlag: true|' src/BEV-LIO-LC/config/velodyne.yaml
 
 RUN source /opt/ros/noetic/setup.bash && \
-    source /workspace/ws_livox/devel/setup.bash && \
     cd /workspace/benchmark && \
     catkin_make
 
