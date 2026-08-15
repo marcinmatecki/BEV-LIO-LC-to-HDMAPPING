@@ -118,7 +118,7 @@ WORKDIR /workspace
 
 RUN git clone https://github.com/Livox-SDK/Livox-SDK.git /workspace/Livox-SDK && \
     cd /workspace/Livox-SDK && \
-    mkdir build && \
+    mkdir -p build && \
     cd build && \
     cmake .. && \
     make -j$(nproc) && \
