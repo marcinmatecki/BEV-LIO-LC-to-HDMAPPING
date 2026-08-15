@@ -19,7 +19,7 @@ The dataset should be located in:
 
 ```shell
 cd ~/hdmapping-benchmark-loop-closure
-git clone https://github.com/marcinmatecki/BEV-LIO-LC-to-HDMAPPING --recursive
+git clone https://github.com/marcinmatecki/BEV-LIO-LC-to-HDMAPPING.git --recursive
 cd BEV-LIO-LC-to-HDMAPPING
 docker build -t bev-lio-lc .
 ```
