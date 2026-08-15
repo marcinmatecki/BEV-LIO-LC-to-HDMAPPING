@@ -114,15 +114,16 @@ RUN mkdir -p build && \
     make install && \
     ldconfig
 
-RUN mkdir -p /workspace/ws_livox/src && \
-    git clone \
-    --branch v2.6.0 \
-    https://github.com/Livox-SDK/livox_ros_driver.git \
-    /workspace/ws_livox/src/livox_ros_driver
+WORKDIR /workspace
 
-RUN source /opt/ros/noetic/setup.bash && \
-    cd /workspace/ws_livox && \
-    catkin_make
+RUN git clone https://github.com/Livox-SDK/Livox-SDK.git /workspace/Livox-SDK && \
+    cd /workspace/Livox-SDK && \
+    mkdir build && \
+    cd build && \
+    cmake .. && \
+    make -j$(nproc) && \
+    make install && \
+    ldconfig
 
 WORKDIR /workspace
 
