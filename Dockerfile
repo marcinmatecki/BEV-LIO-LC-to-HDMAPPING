@@ -279,9 +279,6 @@ ENV LD_LIBRARY_PATH=/usr/local/lib:/workspace/libtorch/lib:/usr/local/cuda/lib64
 RUN echo "source /opt/ros/noetic/setup.bash" \
     >> /root/.bashrc
 
-RUN echo "source /workspace/ws_livox/devel/setup.bash" \
-    >> /root/.bashrc
-
 RUN echo "source /workspace/benchmark/devel/setup.bash" \
     >> /root/.bashrc
 
