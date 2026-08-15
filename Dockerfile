@@ -277,28 +277,28 @@ ENV PATH=/usr/local/cuda/bin:${PATH}
 ENV LD_LIBRARY_PATH=/usr/local/lib:/workspace/libtorch/lib:/usr/local/cuda/lib64:${LD_LIBRARY_PATH}
 
 RUN echo "source /opt/ros/noetic/setup.bash" \
-    >> /root/.bashrc
+    >> ~/.bashrc
 
 RUN echo "source /workspace/benchmark/devel/setup.bash" \
-    >> /root/.bashrc
+    >> ~/.bashrc
 
 RUN echo "export CUDA_HOME=/usr/local/cuda" \
-    >> /root/.bashrc
+    >> ~/.bashrc
 
 RUN echo "export LIBTORCH=/workspace/libtorch" \
-    >> /root/.bashrc
+    >> ~/.bashrc
 
 RUN echo "export Torch_DIR=/workspace/libtorch/share/cmake/Torch" \
-    >> /root/.bashrc
+    >> ~/.bashrc
 
 RUN echo "export OpenCV_DIR=/usr/local/lib/cmake/opencv4" \
-    >> /root/.bashrc
+    >> ~/.bashrc
 
 RUN echo "export PATH=/usr/local/cuda/bin:\$PATH" \
-    >> /root/.bashrc
+    >> ~/.bashrc
 
 RUN echo "export LD_LIBRARY_PATH=/usr/local/lib:/workspace/libtorch/lib:/usr/local/cuda/lib64:\$LD_LIBRARY_PATH" \
-    >> /root/.bashrc
+    >> ~/.bashrc
 
 WORKDIR /workspace/benchmark
 
